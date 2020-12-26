@@ -18,5 +18,7 @@ namespace YemekTarifSitesi.Data
         public DbSet<Tur> Tur { get; set; }
         public DbSet<Yemek> Yemek { get; set; }
         public DbSet<Yorumlar> Yorumlar { get; set; }
+        public DbSet<YemekTur> YemekTur { get; set; }
+        public DbSet<YemekMalzeme> YemekMalzeme { get; set; }
     }
 }

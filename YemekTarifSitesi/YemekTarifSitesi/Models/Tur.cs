@@ -7,11 +7,8 @@ namespace YemekTarifSitesi.Models
 {
     public class Tur
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
         public string Adi { get; set; }
 
-
-
-        //public ICollection<Yemek> Yemek { get; set; }
     }
 }

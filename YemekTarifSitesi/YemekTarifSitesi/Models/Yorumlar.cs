@@ -7,9 +7,11 @@ namespace YemekTarifSitesi.Models
 {
     public class Yorumlar
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
         public string KullaniciAdi { get; set; }
         public string Mail { get; set; }
         public string Yorum { get; set; }
+        public int YemekId { get; set; }
+        public Yemek Yemek { get; set; }
     }
 }

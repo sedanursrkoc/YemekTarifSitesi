@@ -7,13 +7,10 @@ namespace YemekTarifSitesi.Models
 {
     public class Malzeme
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
         public string Adi { get; set; }
         public double Miktar { get; set; }
         public string MiktarTur { get; set; }
 
-
-
-        //public ICollection<Yemek> Yemek { get; set; }
     }
 }

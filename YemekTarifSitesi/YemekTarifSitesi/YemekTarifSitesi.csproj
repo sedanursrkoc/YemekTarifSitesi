@@ -6,6 +6,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Data\Migrations\20201228175451_guncelleme.cs" />
+    <Compile Remove="Data\Migrations\20201228175451_guncelleme.Designer.cs" />
+    <Compile Remove="Data\Migrations\20201228175636_guncelleme.cs" />
+    <Compile Remove="Data\Migrations\20201228175636_guncelleme.Designer.cs" />
+    <Compile Remove="Data\Migrations\20201228175803_guncelleme.cs" />
+    <Compile Remove="Data\Migrations\20201228175803_guncelleme.Designer.cs" />
+    <Compile Remove="Data\Migrations\20201228180147_guncelleme.cs" />
+    <Compile Remove="Data\Migrations\20201228180147_guncelleme.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.10" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.10" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.10" />

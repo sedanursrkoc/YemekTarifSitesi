@@ -1,0 +1,30 @@
+﻿@model YemekTarifSitesi.Models.YemekMalzeme
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>YemekMalzeme</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Yemek)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Yemek.Id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Malzeme)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Malzeme.Id)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

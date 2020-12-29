@@ -64,9 +64,26 @@
                         <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
                         <li class="nav-item"><a href="/Default/Recipes" class="nav-link">Stories</a></li>
                         <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                        <li class="nav-item cta"><a href="reservation.html" class="nav-link">Book a table</a></li>
+                        <li class="nav-item cta"><a class="nav-link" asp-area="" asp-controller="Yemek" asp-action="Index">Yemek       </a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Admin
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                                <a class="dropdown-item" asp-area="" asp-controller="Yemek" asp-action="Index">Yemek</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Malzeme" asp-action="Index">Malzeme</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Tur" asp-action="Index">Tür</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" asp-area="" asp-controller="YemekMalzeme" asp-action="Index">YemekMalzeme</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="YemekTur" asp-action="Index">YemekTür</a>
+
+                            </div>
+                        </li>
                     </ul>
+
                 </div>
+
+                
             </div>
         </nav>
     <div>

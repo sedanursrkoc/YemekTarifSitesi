@@ -3,9 +3,10 @@
 @{
     ViewData["Title"] = "Index";
 }
-
-<h1>Index</h1>
-
+<div style="background-color: #0F0D0C">
+    <br /><br /><br /><br />
+</div>
+<h1>&nbsp;Index</h1>
 <p>
     <br /><a class="nav-link" asp-action="Create">Create New</a>
 </p>
@@ -47,7 +48,8 @@
                 @Html.DisplayFor(modelItem => item.Puan)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Fotograf)
+                @*@Html.DisplayFor(modelItem => item.Fotograf)*@
+                <img src="@Url.Content(item.Fotograf)" class="d-block" style="width:250px; height:250px;" asp-append-version="true" />
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |

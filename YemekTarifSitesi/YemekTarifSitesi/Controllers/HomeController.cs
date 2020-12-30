@@ -5,33 +5,39 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using YemekTarifSitesi.Data;
 using YemekTarifSitesi.Models;
 
 namespace YemekTarifSitesi.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ApplicationDbContext _context;
+        
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ApplicationDbContext context)
         {
-            _logger = logger;
+            _context = context;
         }
 
         public IActionResult Index()
         {
-            return View();
+            var yemekList = _context.Yemek;
+            return View(yemekList.ToList());
         }
 
-        public IActionResult Privacy()
+        public IActionResult Tarifler()
+        {
+            var model = new YemekTarifModel();
+            model.Yemek = _context.Yemek.ToList();
+            model.YemekTur = _context.YemekTur.ToList();
+            return View(model);
+        }
+
+        public IActionResult Hakkimizda()
         {
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
     }
 }

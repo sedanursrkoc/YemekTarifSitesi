@@ -49,8 +49,8 @@ namespace YemekTarifSitesi.Controllers
         // GET: YemekTur/Create
         public IActionResult Create()
         {
-            ViewData["TurId"] = new SelectList(_context.Tur, "Id", "Id");
-            ViewData["YemekId"] = new SelectList(_context.Yemek, "Id", "Id");
+            ViewData["TurId"] = new SelectList(_context.Tur, "Id", "Adi");
+            ViewData["YemekId"] = new SelectList(_context.Yemek, "Id", "YemekAdi");
             return View();
         }
 

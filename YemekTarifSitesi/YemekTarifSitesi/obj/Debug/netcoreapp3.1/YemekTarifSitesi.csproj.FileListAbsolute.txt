@@ -208,3 +208,5 @@ C:\Users\Hp\source\repos\WebProgramlamaProjeOdevi\YemekTarifSitesi\YemekTarifSit
 C:\Users\Hp\source\repos\WebProgramlamaProjeOdevi\YemekTarifSitesi\YemekTarifSitesi\obj\Debug\netcoreapp3.1\Razor\Views\YemekTur\Details.cshtml.g.cs
 C:\Users\Hp\source\repos\WebProgramlamaProjeOdevi\YemekTarifSitesi\YemekTarifSitesi\obj\Debug\netcoreapp3.1\Razor\Views\YemekTur\Edit.cshtml.g.cs
 C:\Users\Hp\source\repos\WebProgramlamaProjeOdevi\YemekTarifSitesi\YemekTarifSitesi\obj\Debug\netcoreapp3.1\Razor\Views\YemekTur\Index.cshtml.g.cs
+C:\Users\Hp\source\repos\WebProgramlamaProjeOdevi\YemekTarifSitesi\YemekTarifSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Home\Tarifler.cshtml.g.cs
+C:\Users\Hp\source\repos\WebProgramlamaProjeOdevi\YemekTarifSitesi\YemekTarifSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Home\Hakkimizda.cshtml.g.cs

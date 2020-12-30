@@ -9,7 +9,7 @@ namespace YemekTarifSitesi.Models
     {
         public int Id { get; set; }
         public string YemekAdi { get; set; }
-        public string Malzemeler { get; set; }
+        public string? Malzemeler { get; set; }
         public string Tarif { get; set; }
         public double? Puan { get; set; }
         public string Fotograf { get; set; }

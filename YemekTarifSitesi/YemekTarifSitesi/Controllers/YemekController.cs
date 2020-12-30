@@ -68,14 +68,14 @@ namespace YemekTarifSitesi.Controllers
 
 
                 string fileName = Guid.NewGuid().ToString();
-                var uploads = Path.Combine(webRootPath, @"images\yemek");
+                var uploads = Path.Combine(webRootPath, @"images/yemek/");
                 var extension = Path.GetExtension(files[0].FileName);
 
                 using (var fileStream = new FileStream(Path.Combine(uploads, fileName + extension), FileMode.Create))
                 {
                     files[0].CopyTo(fileStream);
                 }
-                yemek.Fotograf = @"\images\yemek" + fileName + extension;
+                yemek.Fotograf = @"/images/yemek/" + fileName + extension;
 
                 _context.Add(yemek);
                 await _context.SaveChangesAsync();

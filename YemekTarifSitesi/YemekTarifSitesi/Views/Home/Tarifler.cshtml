@@ -4,7 +4,42 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<section class="hero-wrap hero-wrap-2" style="background-image: url('images/image_1.jpg');" data-stellar-background-ratio="0.5">
+@functions{public string YemekGetir(int id)
+    {
+        @foreach (var item in Model.Yemek)
+        {
+            @foreach (var item2 in Model.YemekTur)
+            {
+                @if (@item2.TurId == @id)
+                {
+                    <div class="col-md-4 ftco-animate">
+                        <div class="blog-entry">
+                            <img src="@item.Fotograf" class="d-block w-100 h-100">
+                            <div class="text pt-3 pb-4 px-4">
+                                <div class="meta">
+                                    <div><a href="#">Tür:</a></div>
+                                    <div><a href="#">Admin</a></div>
+                                </div>
+                                <h3 class="heading"><a href="#">@item.YemekAdi</a></h3>
+                                <p class="clearfix">
+                                    <a href="#" class="float-left read">Read more</a>
+                                    <a href="#" class="float-right meta-chat">Puan: @item.Puan</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                }
+             }
+
+         }
+        return string.Empty;
+    }
+
+}
+
+
+<section class="hero-wrap hero-wrap-2">
+    <img style="z-index:-1; position: absolute;" src="~/images/genel/bg_3.jpg" class="d-block w-100 h-auto" data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
         <div class="row no-gutters slider-text align-items-end justify-content-center">
@@ -64,55 +99,33 @@
                         }
                     </div>
                     <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-day-2-tab">
+                        @YemekGetir(2)
                     </div>
                     <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-day-3-tab">
+                        @YemekGetir(3)
                     </div>
                     <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-day-4-tab">
+                        @YemekGetir(4)
                     </div>
                     <div class="tab-pane fade" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-day-5-tab">
-                        @foreach (var item in Model.Yemek)
-                        {
-                            @foreach (var item2 in Model.YemekTur)
-                            {
-                                @if (@item2.TurId == 1)
-                                {
-                                    <div class="col-md-4 ftco-animate">
-                                        <div class="blog-entry">
-                                            <img src="@item.Fotograf" class="d-block w-100 h-100">
-                                            <div class="text pt-3 pb-4 px-4">
-                                                <div class="meta">
-                                                    <div><a href="#">Tür:</a></div>
-                                                    <div><a href="#">Admin</a></div>
-                                                </div>
-                                                <h3 class="heading"><a href="#">@item.YemekAdi</a></h3>
-                                                <p class="clearfix">
-                                                    <a href="#" class="float-left read">Read more</a>
-                                                    <a href="#" class="float-right meta-chat">Puan: @item.Puan</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                }
-                            }
-
-                        }
-
+                        @YemekGetir(5)
                     </div>
                     <div class="tab-pane fade" id="v-pills-6" role="tabpanel" aria-labelledby="v-pills-day-6-tab">
+                        @YemekGetir(6)
                     </div>
                     @*<div class="row no-gutters my-5">
-                    <div class="col text-center">
-                        <div class="block-27">
-                            <ul>
-                                <li><a href="#">&lt;</a></li>
-                                <li class="active"><span>1</span></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li><a href="#">&gt;</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>*@
+                            <div class="col text-center">
+                                <div class="block-27">
+                                    <ul>
+                                        <li><a href="#">&lt;</a></li>
+                                        <li class="active"><span>1</span></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#">&gt;</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>*@
 </section>

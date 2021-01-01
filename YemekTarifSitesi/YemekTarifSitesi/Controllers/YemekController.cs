@@ -9,9 +9,11 @@ using YemekTarifSitesi.Data;
 using YemekTarifSitesi.Models;
 using Microsoft.AspNetCore.Hosting;
 using System.IO;
+using Microsoft.AspNetCore.Authorization;
 
 namespace YemekTarifSitesi.Controllers
 {
+    [Authorize]
     public class YemekController : Controller
     {
         private readonly ApplicationDbContext _context;

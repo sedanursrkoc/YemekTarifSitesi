@@ -210,3 +210,13 @@ C:\Users\Hp\source\repos\WebProgramlamaProjeOdevi\YemekTarifSitesi\YemekTarifSit
 C:\Users\Hp\source\repos\WebProgramlamaProjeOdevi\YemekTarifSitesi\YemekTarifSitesi\obj\Debug\netcoreapp3.1\Razor\Views\YemekTur\Index.cshtml.g.cs
 C:\Users\Hp\source\repos\WebProgramlamaProjeOdevi\YemekTarifSitesi\YemekTarifSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Home\Tarifler.cshtml.g.cs
 C:\Users\Hp\source\repos\WebProgramlamaProjeOdevi\YemekTarifSitesi\YemekTarifSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Home\Hakkimizda.cshtml.g.cs
+C:\Users\Hp\source\repos\WebProgramlamaProjeOdevi\YemekTarifSitesi\YemekTarifSitesi\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+C:\Users\Hp\source\repos\WebProgramlamaProjeOdevi\YemekTarifSitesi\YemekTarifSitesi\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
+C:\Users\Hp\source\repos\WebProgramlamaProjeOdevi\YemekTarifSitesi\YemekTarifSitesi\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\Index.cshtml.g.cs
+C:\Users\Hp\source\repos\WebProgramlamaProjeOdevi\YemekTarifSitesi\YemekTarifSitesi\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml.g.cs
+C:\Users\Hp\source\repos\WebProgramlamaProjeOdevi\YemekTarifSitesi\YemekTarifSitesi\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
+C:\Users\Hp\source\repos\WebProgramlamaProjeOdevi\YemekTarifSitesi\YemekTarifSitesi\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+C:\Users\Hp\source\repos\WebProgramlamaProjeOdevi\YemekTarifSitesi\YemekTarifSitesi\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Users\Hp\source\repos\WebProgramlamaProjeOdevi\YemekTarifSitesi\YemekTarifSitesi\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Hp\source\repos\WebProgramlamaProjeOdevi\YemekTarifSitesi\YemekTarifSitesi\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\Hp\source\repos\WebProgramlamaProjeOdevi\YemekTarifSitesi\YemekTarifSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout2.cshtml.g.cs

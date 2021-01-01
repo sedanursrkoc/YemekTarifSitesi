@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<Kullanici> SignInManager
+@inject UserManager<Kullanici> UserManager
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -28,19 +31,30 @@
 
 </head>
 <body>
-        <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-            <div class="container">
-                <a class="navbar-brand" href="~/feliciano-master/index.html">Feliciano</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="oi oi-menu"></span> Menu
-                </button>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="~/feliciano-master/index.html">Feliciano</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
 
-                <div class="collapse navbar-collapse" id="ftco-nav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active"><a href="/Home/Index" class="nav-link">Anasayfa</a></li>
-                        <li class="nav-item"><a href="/Home/Hakkimizda" class="nav-link">Hakkımızda</a></li>
-                        <li class="nav-item"><a href="/Home/Tarifler" class="nav-link">Tarifler</a></li>
-                        <li class="nav-item cta"><a class="nav-link" asp-area="" asp-controller="Yemek" asp-action="Index">Yemek       </a></li>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="/Home/Index" class="nav-link">Anasayfa</a></li>
+                    <li class="nav-item"><a href="/Home/Hakkimizda" class="nav-link">Hakkımızda</a></li>
+                    <li class="nav-item cta"><a href="/Home/Tarifler" class="nav-link">Tarifler</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dil
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                            <a class="dropdown-item">Türkçe</a>
+                            <a class="dropdown-item">İngilizce</a>
+
+                        </div>
+                    </li>
+                    @if (SignInManager.IsSignedIn(User))
+                    {
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Admin
@@ -55,13 +69,17 @@
 
                             </div>
                         </li>
-                    </ul>
+                    }
 
+                </ul>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <partial name="_LoginPartial" />
                 </div>
-
-                
             </div>
-        </nav>
+
+
+        </div>
+    </nav>
     <div>
         <main role="main" class="pb-3">
             @RenderBody()
@@ -147,7 +165,7 @@
 
     <!-- loader -->
     <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" /><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
-    
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/js/jquery.min.js"></script>
     <script src="~/js/jquery-migrate-3.0.1.min.js"></script>

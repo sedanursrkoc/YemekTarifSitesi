@@ -96,12 +96,12 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4 blog-entry" style="margin-left: 50%; height: 500px;">
-                                    Malzemeler:
+                                    Malzemeler:<br />
                                     @foreach (var item2 in Model.YemekMalzeme)
                                     {
                                         if (item2.YemekId == item.Id)
                                         {
-                                            @item2.Malzeme.Miktar @item2.Malzeme.MiktarTur @item2.Malzeme.Adi<br />
+                                            @item2.Malzeme.Miktar @:&nbsp; @item2.Malzeme.MiktarTur  &nbsp; @item2.Malzeme.Adi<br />
                                         }
                                     }
                                     <br />Tarif: @item.Tarif

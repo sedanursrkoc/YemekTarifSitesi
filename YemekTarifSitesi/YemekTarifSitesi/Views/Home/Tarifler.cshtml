@@ -6,34 +6,34 @@
 
 @functions{public string YemekGetir(int id)
     {
-        @foreach (var item in Model.Yemek)
+        <div class="d-flex align-self-stretch">
+
+             @foreach (var item in Model.YemekTur) 
         {
-            @foreach (var item2 in Model.YemekTur)
-            {
-                @if (@item2.TurId == @id)
+                @if (item.TurId == id)
                 {
                     <div class="col-md-4 ftco-animate">
                         <div class="blog-entry">
-                            <img src="@item.Fotograf" class="d-block w-100 h-100">
+                            <img src="@item.Yemek.Fotograf" class="d-block" style="width: 100%; height: 350px;">
                             <div class="text pt-3 pb-4 px-4">
                                 <div class="meta">
                                     <div><a href="#">Tür:</a></div>
                                     <div><a href="#">Admin</a></div>
                                 </div>
-                                <h3 class="heading"><a href="#">@item.YemekAdi</a></h3>
+                                <h3 class="heading"><a href="#">@item.Yemek.YemekAdi</a></h3>
                                 <p class="clearfix">
-                                    <a href="#" class="float-left read">Read more</a>
-                                    <a href="#" class="float-right meta-chat">Puan: @item.Puan</a>
+                                    <a href="#" class="float-right meta-chat">Puan: @item.Yemek.Puan</a>
                                 </p>
                             </div>
                         </div>
                     </div>
                 }
-             }
-
-         }
+        }
+        
+        </div>
         return string.Empty;
     }
+
 
 }
 
@@ -73,32 +73,44 @@
 
                 </div>
             </div>
-            <div class="col-md-12 tab-wrap">
+            <div class="col-md-12">
 
                 <div class="tab-content" id="v-pills-tabContent">
                     <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-day-1-tab">
                         @foreach (var item in Model.Yemek)
                         {
-                            <div class="col-md-4 ftco-animate">
-                                <div class="blog-entry">
-                                    <img src="@item.Fotograf" class="d-block w-100 h-100">
+                            
+                            <div class=" ftco-animate" style="width: 100%;">
+                                <div class="col-md-4 blog-entry" style="width: 50%; height: 500px; float: left;">
+                                    <img src="@item.Fotograf" class="d-block" style="width: 100%; height: 70%;">
                                     <div class="text pt-3 pb-4 px-4">
                                         <div class="meta">
                                             <div><a href="#">Tür:</a></div>
                                             <div><a href="#">Admin</a></div>
                                         </div>
                                         <h3 class="heading"><a href="#">@item.YemekAdi</a></h3>
+                                        <p style="color:white"></p>
                                         <p class="clearfix">
-                                            <a href="#" class="float-left read">Read more</a>
                                             <a href="#" class="float-right meta-chat">Puan: @item.Puan</a>
                                         </p>
                                     </div>
+                                </div>
+                                <div class="col-md-4 blog-entry" style="margin-left: 50%; height: 500px;">
+                                    Malzemeler:
+                                    @foreach (var item2 in Model.YemekMalzeme)
+                                    {
+                                        if (item2.YemekId == item.Id)
+                                        {
+                                            @item2.Malzeme.Miktar @item2.Malzeme.MiktarTur @item2.Malzeme.Adi<br />
+                                        }
+                                    }
+                                    <br />Tarif: @item.Tarif
                                 </div>
                             </div>
 
                         }
                     </div>
-                    <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-day-2-tab">
+                    <div class="tab-pane fade " id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-day-2-tab">
                         @YemekGetir(2)
                     </div>
                     <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-day-3-tab">
@@ -128,4 +140,5 @@
                                 </div>
                             </div>
                         </div>*@
+                    </div></div>
 </section>

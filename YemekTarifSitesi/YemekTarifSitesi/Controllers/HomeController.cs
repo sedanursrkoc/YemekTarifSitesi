@@ -30,7 +30,9 @@ namespace YemekTarifSitesi.Controllers
         {
             var model = new YemekTarifModel();
             model.Yemek = _context.Yemek.ToList();
+            model.Malzeme = _context.Malzeme.ToList();
             model.YemekTur = _context.YemekTur.ToList();
+            model.YemekMalzeme = _context.YemekMalzeme.ToList();
             return View(model);
         }
 

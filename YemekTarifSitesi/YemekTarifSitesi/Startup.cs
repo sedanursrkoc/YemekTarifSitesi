@@ -13,6 +13,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using YemekTarifSitesi.Data;
 using YemekTarifSitesi.Models;
+using System.Globalization;
+using Microsoft.AspNetCore.Localization;
+using Microsoft.ApplicationInsights.AspNetCore;
+using Microsoft.AspNetCore.Mvc.Razor;
 
 namespace YemekTarifSitesi
 {
@@ -28,6 +32,17 @@ namespace YemekTarifSitesi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddLocalization(options =>
+            {
+                // Resource (kaynak) dosyalarýmýzý ana dizin altýnda “Resources” klasorü içerisinde tutacaðýmýzý belirtiyoruz.
+                options.ResourcesPath = "Resources";
+            });
+
+            services
+                .AddMvc()
+                .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
+                .AddDataAnnotationsLocalization();
+
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
@@ -51,8 +66,24 @@ namespace YemekTarifSitesi
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+
+            var supportedCultures = new List<CultureInfo>
+            {
+            new CultureInfo("tr-TR"),
+            new CultureInfo("en-US"),
+            };
+
+            app.UseRequestLocalization(new RequestLocalizationOptions
+            {
+                SupportedCultures = supportedCultures,
+                SupportedUICultures = supportedCultures,
+                DefaultRequestCulture = new RequestCulture("en-US")
+            });
+
+            
 
             app.UseRouting();
 

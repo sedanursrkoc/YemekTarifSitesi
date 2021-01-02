@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -13,15 +14,17 @@ namespace YemekTarifSitesi.Controllers
     public class HomeController : Controller
     {
         private readonly ApplicationDbContext _context;
-        
 
-        public HomeController(ApplicationDbContext context)
+        private readonly IStringLocalizer<HomeController> _localizer;
+        public HomeController(ApplicationDbContext context, IStringLocalizer<HomeController> localizer)
         {
             _context = context;
+            _localizer = localizer;
         }
 
         public IActionResult Index()
         {
+            ViewData["Message"] = _localizer.GetString("Message");
             var yemekList = _context.Yemek;
             return View(yemekList.ToList());
         }

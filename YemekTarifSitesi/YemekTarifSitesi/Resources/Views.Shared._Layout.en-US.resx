@@ -120,6 +120,9 @@
   <data name="Anasayfa" xml:space="preserve">
     <value>Home</value>
   </data>
+  <data name="AnasayfaYazı" xml:space="preserve">
+    <value>Keep in touch with us and do not miss our famous chefs' unique recipes!</value>
+  </data>
   <data name="Dil" xml:space="preserve">
     <value>Language</value>
   </data>
@@ -152,5 +155,8 @@
   </data>
   <data name="YemekTur" xml:space="preserve">
     <value>FoodKind</value>
+  </data>
+  <data name="İletişim" xml:space="preserve">
+    <value>Contact</value>
   </data>
 </root>

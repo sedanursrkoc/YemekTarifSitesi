@@ -17,12 +17,10 @@
                             <img src="@item.Yemek.Fotograf" class="d-block" style="width: 100%; height: 350px;">
                             <div class="text pt-3 pb-4 px-4">
                                 <div class="meta">
-                                    <div><a href="#">Tür:</a></div>
-                                    <div><a href="#">Admin</a></div>
                                 </div>
                                 <h3 class="heading"><a href="#">@item.Yemek.YemekAdi</a></h3>
                                 <p class="clearfix">
-                                    <a href="#" class="float-right meta-chat">Puan: @item.Yemek.Puan</a>
+                                    <a href="#" class="float-left meta-chat">Puan: @item.Yemek.Puan</a>
                                 </p>
                             </div>
                         </div>
@@ -85,26 +83,24 @@
                                     <img src="@item.Fotograf" class="d-block" style="width: 100%; height: 70%;">
                                     <div class="text pt-3 pb-4 px-4">
                                         <div class="meta">
-                                            <div><a href="#">Tür:</a></div>
-                                            <div><a href="#">Admin</a></div>
                                         </div>
                                         <h3 class="heading"><a href="#">@item.YemekAdi</a></h3>
                                         <p style="color:white"></p>
                                         <p class="clearfix">
-                                            <a href="#" class="float-right meta-chat">Puan: @item.Puan</a>
+                                            <a href="#" class="float-left meta-chat">Puan: @item.Puan</a>
                                         </p>
                                     </div>
                                 </div>
-                                <div class="col-md-4 blog-entry" style="margin-left: 50%; height: 500px;">
-                                    Malzemeler:<br />
+                                <div class="col-md-8 blog-entry" style="margin-left: 35%; height: 500px; width: 100%;">
+                                    <b>Malzemeler:</b>
                                     @foreach (var item2 in Model.YemekMalzeme)
                                     {
                                         if (item2.YemekId == item.Id)
                                         {
-                                            @item2.Malzeme.Miktar @:&nbsp; @item2.Malzeme.MiktarTur  &nbsp; @item2.Malzeme.Adi<br />
+                                            @item2.Malzeme.Miktar @:&nbsp; @item2.Malzeme.MiktarTur  &nbsp; @item2.Malzeme.Adi, &nbsp;
                                         }
                                     }
-                                    <br />Tarif: @item.Tarif
+                                    <br /><b>Tarif:</b> @item.Tarif
                                 </div>
                             </div>
 

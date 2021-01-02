@@ -126,4 +126,10 @@
   <data name="Tarifler" xml:space="preserve">
     <value>Tarifler</value>
   </data>
+  <data name="Şef" xml:space="preserve">
+    <value>Şef</value>
+  </data>
+  <data name="Şeflerimiz" xml:space="preserve">
+    <value>Şeflerimiz</value>
+  </data>
 </root>

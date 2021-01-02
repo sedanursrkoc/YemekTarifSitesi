@@ -69,8 +69,8 @@ namespace YemekTarifSitesi.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["MalzemeId"] = new SelectList(_context.Malzeme, "Id", "Id", yemekMalzeme.MalzemeId);
-            ViewData["YemekId"] = new SelectList(_context.Yemek, "Id", "Id", yemekMalzeme.YemekId);
+            ViewData["MalzemeId"] = new SelectList(_context.Malzeme, "Id", "Adi", yemekMalzeme.MalzemeId);
+            ViewData["YemekId"] = new SelectList(_context.Yemek, "Id", "YemekAdi", yemekMalzeme.YemekId);
             return View(yemekMalzeme);
         }
 
@@ -87,8 +87,8 @@ namespace YemekTarifSitesi.Controllers
             {
                 return NotFound();
             }
-            ViewData["MalzemeId"] = new SelectList(_context.Malzeme, "Id", "Id", yemekMalzeme.MalzemeId);
-            ViewData["YemekId"] = new SelectList(_context.Yemek, "Id", "Id", yemekMalzeme.YemekId);
+            ViewData["MalzemeId"] = new SelectList(_context.Malzeme, "Id", "Adi", yemekMalzeme.MalzemeId);
+            ViewData["YemekId"] = new SelectList(_context.Yemek, "Id", "YemekAdi", yemekMalzeme.YemekId);
             return View(yemekMalzeme);
         }
 
@@ -124,8 +124,8 @@ namespace YemekTarifSitesi.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["MalzemeId"] = new SelectList(_context.Malzeme, "Id", "Id", yemekMalzeme.MalzemeId);
-            ViewData["YemekId"] = new SelectList(_context.Yemek, "Id", "Id", yemekMalzeme.YemekId);
+            ViewData["MalzemeId"] = new SelectList(_context.Malzeme, "Id", "Adi", yemekMalzeme.MalzemeId);
+            ViewData["YemekId"] = new SelectList(_context.Yemek, "Id", "YemekAdi", yemekMalzeme.YemekId);
             return View(yemekMalzeme);
         }
 

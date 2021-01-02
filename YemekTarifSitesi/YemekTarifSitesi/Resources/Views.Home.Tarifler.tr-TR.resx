@@ -117,13 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="İcerik" xml:space="preserve">
-    <value>Best Restaurant</value>
+  <data name="Akşam" xml:space="preserve">
+    <value>Akşam</value>
   </data>
-  <data name="İcerik2" xml:space="preserve">
-    <value>Nutritious &amp;amp; Tasty</value>
+  <data name="Anasayfa" xml:space="preserve">
+    <value>Anasayfa</value>
   </data>
-  <data name="İcerik3" xml:space="preserve">
-    <value>Pratic Recipes</value>
+  <data name="Hepsi" xml:space="preserve">
+    <value>Hepsi</value>
+  </data>
+  <data name="Kahvaltı" xml:space="preserve">
+    <value>Kahvaltı</value>
+  </data>
+  <data name="Tarifler" xml:space="preserve">
+    <value>Tarifler</value>
+  </data>
+  <data name="Tarifler1" xml:space="preserve">
+    <value>Tarifler</value>
+  </data>
+  <data name="Tatlı" xml:space="preserve">
+    <value>Tatlı</value>
+  </data>
+  <data name="Öğle" xml:space="preserve">
+    <value>Öğle</value>
+  </data>
+  <data name="İçecek" xml:space="preserve">
+    <value>İçecek</value>
   </data>
 </root>

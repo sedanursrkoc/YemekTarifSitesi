@@ -118,6 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="İcerik" xml:space="preserve">
-    <value>En iyi Restoran</value>
+    <value>En iyi Tarif Sitesi</value>
+  </data>
+  <data name="İcerik2" xml:space="preserve">
+    <value>Besleyici &amp;amp; Lezzetli Yemek Tarifleri</value>
+  </data>
+  <data name="İcerik3" xml:space="preserve">
+    <value>Pratik Tarifler</value>
   </data>
 </root>

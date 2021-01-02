@@ -241,3 +241,9 @@ C:\Users\Hp\source\repos\WebProgramlamaProjeOdevi\YemekTarifSitesi\YemekTarifSit
 C:\Users\Hp\source\repos\WebProgramlamaProjeOdevi\YemekTarifSitesi\YemekTarifSitesi\obj\Debug\netcoreapp3.1\YemekTarifSitesi.Resources.Views.Home.Index.tr-TR.resources
 C:\Users\Hp\source\repos\WebProgramlamaProjeOdevi\YemekTarifSitesi\YemekTarifSitesi\obj\Debug\netcoreapp3.1\YemekTarifSitesi.Resources.Views.Shared._Layout.en-US.resources
 C:\Users\Hp\source\repos\WebProgramlamaProjeOdevi\YemekTarifSitesi\YemekTarifSitesi\obj\Debug\netcoreapp3.1\YemekTarifSitesi.Resources.Views.Shared._Layout.tr-TR.resources
+C:\Users\Hp\source\repos\WebProgramlamaProjeOdevi\YemekTarifSitesi\YemekTarifSitesi\obj\Debug\netcoreapp3.1\YemekTarifSitesi.Resources.Views.Home.Hakkimizda.en-US.resources
+C:\Users\Hp\source\repos\WebProgramlamaProjeOdevi\YemekTarifSitesi\YemekTarifSitesi\obj\Debug\netcoreapp3.1\YemekTarifSitesi.Resources.Views.Home.Hakkimizda.tr-TR.resources
+C:\Users\Hp\source\repos\WebProgramlamaProjeOdevi\YemekTarifSitesi\YemekTarifSitesi\obj\Debug\netcoreapp3.1\YemekTarifSitesi.Resources.Views.Home.Tarifler.en-US.resources
+C:\Users\Hp\source\repos\WebProgramlamaProjeOdevi\YemekTarifSitesi\YemekTarifSitesi\obj\Debug\netcoreapp3.1\YemekTarifSitesi.Resources.Views.Home.Tarifler.tr-TR.resources
+C:\Users\Hp\source\repos\WebProgramlamaProjeOdevi\YemekTarifSitesi\YemekTarifSitesi\obj\Debug\netcoreapp3.1\YemekTarifSitesi.Resources.Views.Shared._LoginPartial.en-US.resources
+C:\Users\Hp\source\repos\WebProgramlamaProjeOdevi\YemekTarifSitesi\YemekTarifSitesi\obj\Debug\netcoreapp3.1\YemekTarifSitesi.Resources.Views.Shared._LoginPartial.tr-TR.resources
